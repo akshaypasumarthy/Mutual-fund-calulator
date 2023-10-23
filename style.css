@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 300px;
+    grid-template-columns: 300px 300px;
+    gap: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.heading {
+    padding: 10px;
+}
+
+.compartment {
+    padding: 10px;
+}
+
+.compartment-1 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.compartment-2 {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.top {
+    background-color: rgb(232, 246, 251);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+strong, p {
+    margin-bottom: 2px;
+}
+
+strong.title {
+    color: blue;
+    font-size: 25px;
+    margin-bottom: 2px;
+}
+
+p.subtitle {
+    color: lightgray;
+    margin-top: 2px;
+}
+
+strong.total {
+    font-size: 30px;
+}
+
+div.invest {
+    margin-right: 20px;
+}
+
+div.earn {
+    margin-left: 20px;
+}
+
+div.amount {
+    display: flex;
+    justify-content: center;
+}
+
+p.result-label, p.invested-label, p.returns-label {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+td {
+    padding: 3px;
+    font-weight: 500;
+}
+
+.btn {
+    box-shadow: 0 4px 8px 0 rgb(186, 205, 243), 0 6px 20px 0 rgb(168, 194, 245);
+}
+
+@media only screen and (max-width: 670px) {
+    .grid-container {
+        margin-top: 80px;
+        display: block;
+        border: 1px solid;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .grid-container {
+        margin-top: 170px;
+        display: block;
+        border: 1px solid;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: white;
+    }
+    .bottom {
+        margin-top: 50px;
+        padding: 10px;
+        display: block;
+    }
+}
